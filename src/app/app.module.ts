@@ -13,6 +13,7 @@ import { SingInComponent } from './Components/Auth/sing-in/sing-in.component';
 import { PageNotFoundComponent } from './Layout/page-not-found/page-not-found.component';
 import { ContactusComponent } from './Components/contactus/contactus.component';
 import {HttpClientModule} from '@angular/common/http';
+import { GalleryComponent } from './gallery/gallery.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import {HttpClientModule} from '@angular/common/http';
     SingUpComponent,
     SingInComponent,
     PageNotFoundComponent,
-    ContactusComponent
+    ContactusComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,

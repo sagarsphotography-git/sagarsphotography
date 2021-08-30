@@ -8,9 +8,15 @@ import { StorageService } from 'src/app/storage.service';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-
-  constructor( private store: StorageService, private router: Router) { }
-
+  loggedIn: boolean = false
+  constructor(private store: StorageService, private router: Router) {
+    let token = window.sessionStorage.getItem('token')
+    if (token !== null) {
+      this.loggedIn = true;
+    } else {
+      this.loggedIn = false
+    }
+  }
   ngOnInit(): void {
   }
   onclicklogout(){

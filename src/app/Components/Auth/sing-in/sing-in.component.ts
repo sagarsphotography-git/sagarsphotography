@@ -10,6 +10,7 @@ import { StorageService } from 'src/app/storage.service';
   styleUrls: ['./sing-in.component.css']
 })
 export class SingInComponent implements OnInit {
+  loggedIn: boolean = false
   loginResponse;
 
   constructor(private fb: FormBuilder,private authService:AuthenticationService,private router:Router, private store:StorageService) { }

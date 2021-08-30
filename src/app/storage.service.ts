@@ -8,6 +8,7 @@ export class StorageService {
   SetResponseFromLogin(token){
     window.sessionStorage.setItem('token',token);
   }
+
 getToke(){
   window.sessionStorage.getItem('token')
 }
